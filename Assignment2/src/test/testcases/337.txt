@@ -1,0 +1,4 @@
+## function without implementation
+func main()
+func a(number b)
+func c(number g[10],string s[10], bool bo[10])

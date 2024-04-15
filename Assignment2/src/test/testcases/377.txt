@@ -1,0 +1,9 @@
+## testcase in forum by me. Link: https://lms.hcmut.edu.vn/mod/forum/discuss.php?d=4591
+func main() begin
+var i<-0 
+if (1) 
+	for i until i=10 by 1
+		if (2) return
+		elif (3) return
+		else  return
+end

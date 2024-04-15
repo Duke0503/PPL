@@ -1,0 +1,7 @@
+## use identifier nearly the same with key words
+func main()
+begin 
+    dynamic for1 
+    var var1  <- for_ 
+    if(var_) for_<-1
+end

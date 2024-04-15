@@ -1,0 +1,5 @@
+## check return statement
+func foo() return 1
+func main() begin 
+    return 0
+end

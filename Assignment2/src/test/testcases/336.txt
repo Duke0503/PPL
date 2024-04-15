@@ -1,0 +1,33 @@
+## Bubble Sort Algorithm
+func main()
+begin
+    number arr[5] <- [5, 1, 4, 2, 8] ## declaring and initializing an array of numbers
+    var n <- 5 ## number of elements in the array
+    dynamic i 
+    dynamic j ## loop variables
+    dynamic temp ## temporary variable for swapping
+    i<-0
+    for i until i > n-1 by 1
+    begin
+        j<-0
+        for j  until j > n-i-2 by 1
+        begin
+            if (arr[j] > arr[j+1])
+            begin
+                ## Swap arr[j] and arr[j+1]
+                temp <- arr[j]
+                arr[j] <- arr[j+1]
+                arr[j+1] <- temp
+            end
+        end
+    end
+    
+    ## After sorting, print the sorted array
+    writeString("Sorted Array: ")
+    i<-0
+    for i until i > n-1 by 1
+    begin
+        writeNumber(arr[i])
+    end
+    return
+end

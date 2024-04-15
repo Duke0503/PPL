@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(main), [], Block([VarDecl(Id(a), BoolType, None, ArrayCell(CallExpr(Id(foo), [BinaryOp(or, BinaryOp(<, Id(x), UnaryOp(-, NumLit(2.0))), BinaryOp(==, BinaryOp(..., StringLit(a'"), StringLit(a\')), StringLit(a'"a\')))]), [NumLit(3.0), NumLit(2.0)]))]))])

@@ -1,0 +1,16 @@
+## this code with alot of newline
+
+
+func main()
+
+
+begin 
+if (a=2) 
+
+
+
+a<-2
+
+
+end 
+

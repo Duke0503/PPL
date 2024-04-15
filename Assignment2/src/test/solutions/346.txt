@@ -1,0 +1,1 @@
+Program([VarDecl(Id(a), None, dynamic, BinaryOp(..., Id(x), BinaryOp(==, Id(b), BinaryOp(or, Id(c), BinaryOp(+, BinaryOp(+, Id(d), BinaryOp(/, Id(e), Id(f))), UnaryOp(not, UnaryOp(-, ArrayCell(Id(i), [NumLit(4.0)]))))))))])

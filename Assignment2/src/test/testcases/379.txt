@@ -1,0 +1,9 @@
+## print function 
+func print(string src, string dst) begin
+    output <- "Move 1 disk from tower "
+    output <- output ... src
+    output <- output ... " to tower "
+    output <- output ... des
+    output <- output ... "\n"
+    writeString(output)
+end

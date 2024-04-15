@@ -1,0 +1,3 @@
+## complex expression 
+string s <- "hallo"
+dynamic a<- (("abc"...s) == "aa") or false and true or not (2+3*sin(x)%pi/(3%2)/-4>5) or (1=2)

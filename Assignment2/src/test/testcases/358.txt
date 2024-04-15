@@ -1,0 +1,2 @@
+##declaration check 
+dynamic a

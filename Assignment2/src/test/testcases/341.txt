@@ -1,0 +1,3 @@
+## complex expresion
+string text <- "world"
+dynamic result <- (length(text) > 3) and (substring(text, 0, 3) == "wor") or (false and not(true)) or (cos(2*pi) = 1)

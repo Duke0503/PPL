@@ -1,0 +1,6 @@
+## only function call
+func main() begin 
+doNoThing()
+hello("TheHieu")
+testcase(h[14,2])
+end

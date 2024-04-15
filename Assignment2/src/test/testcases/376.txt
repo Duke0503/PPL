@@ -1,0 +1,16 @@
+## testcase in forum by me. Link: https://lms.hcmut.edu.vn/mod/forum/discuss.php?d=4591
+func main() begin
+if (1)
+	if (2)
+		b()
+	elif (3)
+		if (4)
+			c()
+		elif (5)
+			d()
+		else e()
+	elif(6)
+		f()
+	else g()
+elif (7) h()
+end

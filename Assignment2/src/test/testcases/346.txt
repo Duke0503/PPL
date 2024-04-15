@@ -1,0 +1,2 @@
+## just stupid testcase with all kinds of operation
+dynamic a<- x...b==c or d + e / f + not - i[4]

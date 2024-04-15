@@ -1,0 +1,8 @@
+##for check
+func main()
+begin
+    string words[4] <- ["apple", "banana", "cherry", "date"]
+    dynamic i<-0
+    for  i until i > size(words) - 1 by 1
+        writeString(words[i])
+end

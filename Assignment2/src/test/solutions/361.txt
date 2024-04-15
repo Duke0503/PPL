@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(main), [], Block([CallStmt(Id(doNoThing), []), CallStmt(Id(hello), [StringLit(TheHieu)]), CallStmt(Id(testcase), [ArrayCell(Id(h), [NumLit(14.0), NumLit(2.0)])])]))])

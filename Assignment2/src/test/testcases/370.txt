@@ -1,0 +1,7 @@
+##declare in statement without block
+func main() 
+begin 
+    if (1) string s <- "kkk"
+    elif (2) string s <- "TheHieu"
+    else bool b <- false
+end

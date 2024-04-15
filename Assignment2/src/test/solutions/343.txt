@@ -1,0 +1,1 @@
+Program([VarDecl(Id(s), BoolType, None, BinaryOp(==, BinaryOp(..., StringLit(abc), StringLit(abc)), StringLit(abcabc)))])

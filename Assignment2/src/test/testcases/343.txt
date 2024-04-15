@@ -1,0 +1,2 @@
+## simple expresion 
+bool s <- ("abc"..."abc") == "abcabc"

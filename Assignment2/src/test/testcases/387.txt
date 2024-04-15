@@ -1,0 +1,12 @@
+##if else check 
+func main() begin 
+number today <- getToday()
+number day <- getDay()
+if (today=2) writeString("Hom nay phai di hoc")
+elif (today = 3) 
+if (day=1) writeString("hom nay duoc nghi hoc")
+elif (day=25) writeString("hom nay lam kiem tra")
+else writeString("hom nay di hoc bth")
+elif (today=4) writeString("Hom nay di hoc buoi sang")
+else writeString("Hom nay duoc nghi hoc")
+end

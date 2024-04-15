@@ -1,0 +1,12 @@
+##for in for
+func main()
+begin
+var i<-0
+var j<-0
+var k<-0
+number x<-readNumber()
+for i until i<x/2 by 1 
+for j until j<x/2 by 1 
+for k until k<x/2 by 1 
+x <- x + 1
+end

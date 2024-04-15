@@ -1,0 +1,2 @@
+## array with float number 
+number arr[3.14,1e9,1.]

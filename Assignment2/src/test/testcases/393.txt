@@ -1,0 +1,2 @@
+##declaration check 
+number a<-2

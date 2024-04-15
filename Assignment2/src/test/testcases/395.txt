@@ -1,0 +1,2 @@
+##declaration check 
+string a<-2

@@ -1,0 +1,10 @@
+## if check again :)))
+func main() begin 
+if (true) 
+    if (true) 
+        begin
+        end
+    elif (false)
+        begin
+        end
+end 

@@ -1,0 +1,6 @@
+##check function return an array 
+func returnArray() 
+    return [[1,2,3,4],[2,3],2]
+func main() begin 
+    dynamic a <- returnArray()[0,1]
+end
