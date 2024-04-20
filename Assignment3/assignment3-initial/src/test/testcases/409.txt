@@ -1,0 +1,8 @@
+
+        func happy()
+        return 2
+        func happy()
+        return 1
+        func main()
+        return 0
+        

@@ -1,0 +1,13 @@
+
+        func main()
+        begin
+            number a <- 1
+            number b <- 2
+            bool c <- a > b
+            bool d <- a < b
+            bool e <- a == b
+            bool f <- a != b
+            bool g <- a >= b
+            bool h <- a <= b
+        end
+        

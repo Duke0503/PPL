@@ -1,0 +1,13 @@
+
+            number a
+            func Duc() return
+            func main()begin
+                number a
+                number c
+                string Duc
+                begin
+                    number c
+                    string Duc
+                end
+            end
+        

@@ -1,6 +1,6 @@
 
-            dynamic VoTien
-            var a <- VoTien
+            dynamic Duc
+            var a <- Duc
 
             func main() return
         

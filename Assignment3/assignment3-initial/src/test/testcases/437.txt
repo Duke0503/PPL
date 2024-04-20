@@ -1,0 +1,7 @@
+
+            dynamic Duc
+            number a <- Duc
+            number b <- Duc
+
+            func main() return
+        

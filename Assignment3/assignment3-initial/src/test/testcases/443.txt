@@ -1,0 +1,9 @@
+
+        func main(number a, number b)
+        begin
+            dynamic d
+            dynamic c
+            bool e <- (d...c == c ) and (a > b) or (a < b)
+        end
+        func main()
+        

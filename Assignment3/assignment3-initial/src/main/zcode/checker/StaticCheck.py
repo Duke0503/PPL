@@ -43,7 +43,6 @@ class StaticChecker(BaseVisitor, Utils):
     
 
     def comparType(self, LHS, RHS):
-        print("********* comparType")
 
         if isinstance(LHS, (VoidType, NumberType, StringType, BoolType, ArrayType)) and isinstance(RHS, (VoidType, NumberType, StringType, BoolType, ArrayType)):
             
@@ -66,7 +65,6 @@ class StaticChecker(BaseVisitor, Utils):
                         
     
     def comparListType(self, LHS, RHS):
-        print("********* comparListType")
         if len(LHS) != len(RHS):
             return False 
         
@@ -77,7 +75,6 @@ class StaticChecker(BaseVisitor, Utils):
 
     
     def setTypeArray(self, typeArray, typeArrayZcode):
-        print("********* setTypeArray")
 
         if len(typeArray.size) != len(typeArrayZcode.size):
             return False
@@ -127,7 +124,6 @@ class StaticChecker(BaseVisitor, Utils):
 
 
     def visitProgram(self, ast, param):
-        print("********* Program")
 
         for decl in ast.decl: 
             self.visit(decl, param)
@@ -147,7 +143,6 @@ class StaticChecker(BaseVisitor, Utils):
             raise NoEntryPoint()
 
     def visitVarDecl(self, ast, param):
-        print("********* Vardecl")
 
         if ast.name.name in param[0]:
             raise Redeclared(Variable(), ast.name.name)
@@ -193,7 +188,6 @@ class StaticChecker(BaseVisitor, Utils):
         
 
     def visitFuncDecl(self, ast, param):
-        print("********* Funcdecl")
 
         method = param[-1].get(ast.name.name)
 
@@ -275,7 +269,7 @@ class StaticChecker(BaseVisitor, Utils):
                 
 
     def visitId(self, ast, param):
-        print("********* Id")
+
         found = None 
         
         for para in param:
@@ -293,7 +287,6 @@ class StaticChecker(BaseVisitor, Utils):
 
 
     def visitCallExpr(self, ast, param):
-        print("********* CallExpr")
 
         method = self.listFunction.get(ast.name.name)
 
@@ -337,7 +330,6 @@ class StaticChecker(BaseVisitor, Utils):
                 return method.typ
 
     def visitCallStmt(self, ast, param):
-        print("********* CallStmt")
 
         method = self.listFunction.get(ast.name.name)
 
@@ -382,7 +374,6 @@ class StaticChecker(BaseVisitor, Utils):
 
 
     def visitIf(self, ast, param):
-        print("********* If")
 
         expr = self.visit(ast.expr, param)
         typExpr = None
@@ -435,7 +426,6 @@ class StaticChecker(BaseVisitor, Utils):
             self.visit(ast.elseStmt, [{}] + param)
         
     def visitFor(self, ast, param):
-        print("********* For")
 
         typId = self.visit(ast.name, param)
 
@@ -469,7 +459,6 @@ class StaticChecker(BaseVisitor, Utils):
         self.BlockFor -= 1
     
     def visitReturn(self, ast, param):
-        print("********* Return")
         
         self.Return = True
 
@@ -513,7 +502,7 @@ class StaticChecker(BaseVisitor, Utils):
 
 
     def visitAssign(self, ast, param):
-        print("********* Assign")
+
         LHS_type = self.visit(ast.lhs, param)
         RHS_type = self.visit(ast.rhs, param)
         LHS = None 
@@ -555,7 +544,6 @@ class StaticChecker(BaseVisitor, Utils):
                     raise TypeMismatchInStatement(ast) 
                            
     def visitBinaryOp(self, ast, param):
-        print("********* BinaryOp")
 
         op = ast.op
            
@@ -619,8 +607,7 @@ class StaticChecker(BaseVisitor, Utils):
             return StringType()
 
 
-    def visitUnaryOp(self, ast, param):  
-        print("********* UnaryOp")
+    def visitUnaryOp(self, ast, param):
 
         right = self.visit(ast.operand, param)
         op = ast.op
@@ -650,7 +637,6 @@ class StaticChecker(BaseVisitor, Utils):
             
 
     def visitArrayCell(self, ast, param):
-        print("********* ArrayCell")
 
         left = self.visit(ast.arr, param)
         if type(left) is not ArrayType:
@@ -676,7 +662,6 @@ class StaticChecker(BaseVisitor, Utils):
             return ArrayType(left.size[len(ast.idx):], left.eleType)
 
     def visitArrayLiteral(self, ast, param):
-        print("********* ArrayLiteral")
         typ = None
         for item in ast.value:
 
@@ -711,7 +696,6 @@ class StaticChecker(BaseVisitor, Utils):
             
 
     def visitBlock(self, ast, param):
-        print("********* Block")
         for item in ast.stmt:
             if type(item) is Block: 
                 self.visit(item, [{}] + param)
@@ -720,47 +704,38 @@ class StaticChecker(BaseVisitor, Utils):
 
 
     def visitContinue(self, ast, param):
-        print("********* Continue")
         if self.BlockFor == 0: 
             raise MustInLoop(ast)
 
 
     def visitBreak(self, ast, param):
-        print("********* Break")
         if self.BlockFor == 0: 
             raise MustInLoop(ast)   
         
 
     def visitNumberType(self, ast, param): 
-        print("********* NumberType")
         return ast
     
 
     def visitBoolType(self, ast, param): 
-        print("********* BoolType")
         return ast
     
 
     def visitStringType(self, ast, param): 
-        print("********* StringType")
         return ast
     
 
     def visitArrayType(self, ast, param): 
-        print("********* ArrayType")
         return ast
     
 
     def visitNumberLiteral(self, ast, param): 
-        print("********* NumberLiteral")
         return NumberType()
     
 
     def visitBooleanLiteral(self, ast, param): 
-        print("********* BooleanLiteral")
         return BoolType()
     
 
     def visitStringLiteral(self, ast, param): 
-        print("********* StringType")
         return StringType()

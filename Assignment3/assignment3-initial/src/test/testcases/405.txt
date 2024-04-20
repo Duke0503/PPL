@@ -1,0 +1,10 @@
+
+        func Minh()
+        func Duc(number a, number b)
+        func main()
+        return 0
+        func Duc(number c, number d)
+        begin
+        end
+        
+        
